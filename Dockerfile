@@ -4,4 +4,4 @@ FROM registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift
 
 # Install GhostScript (used to convert PostScript to PDF by the Java Webservice)
 RUN yum install ghostscript
-CMD tail -f /dev/null
+CMD java -jar demo.jar
